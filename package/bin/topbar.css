@@ -1,13 +1,13 @@
 #hide-channels {
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 #topic-container {
   border-bottom: 1px solid #CCC;
   -webkit-box-flex: 0;
   display: -webkit-box;
-  background-color: #ECECEC;
+  background-color: #242323;
   padding: 4px 6px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .topbar-button {
-  background: rgba(0, 0, 0, .08);
+  background: #505053;
   border: 0 transparent;
   text-decoration: none;
   cursor: pointer;
@@ -30,12 +30,21 @@
   margin-right: 4px;
 }
 
+.topbar-button-left:after {
+  content: "←"
+}
+
+.topbar-button-right:after {
+  content: "→"
+}
+
+
 .topbar-button:active {
   box-shadow: 0 0 0 1px rgba(0 ,0 ,0 ,.15) inset, 0 0 6px rgba(0, 0, 0, .2) inset;
 }
 
 .topbar-button:hover {
-  background: rgba(0, 0, 0, .13);
+  background: #afafa3;
 }
 
 .topbar-button:focus {

@@ -10,15 +10,9 @@ html, body {
 }
 
 body {
-  background-color: #242323;
-  color: #afafac;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 12px;
-}
-
-a {
-  color: #75AEBD;
-  text-decoration: none;
+  color: #505053;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 
 .hidden {
@@ -72,7 +66,7 @@ ul {
 }
 
 #rooms-and-nicks {
-  background-color: #242323;
+  background-color: #F7F5E4;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-flex: 0;
@@ -142,7 +136,7 @@ ul {
 }
 
 #rooms-and-nicks .room.server {
-  background-color: #242323;
+  background-color: #F2EFD3;
   position: relative;
 }
 
@@ -226,7 +220,7 @@ ul {
 }
 
 #rooms-and-nicks .room.selected {
-  background-color: #323333;
+  background-color: #F0E798;
 }
 
 #rooms-and-nicks .room {
@@ -276,7 +270,7 @@ ul {
 }
 
 .nicks li:nth-child(odd) {
-  background-color: #323333;
+  background-color: #F2EFD3;
 }
 
 #notice {
@@ -312,7 +306,7 @@ ul {
   padding: 0px 4px;
   margin: 4px;
   border: none;
-  background-color: #242323;
+  background-color: #ECECEC;
   color: #505053;
   cursor: pointer;
   outline: none;
@@ -330,7 +324,7 @@ ul {
   -webkit-box-flex: 1;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  box-shadow: 0px 0px 8px #242323;
+  box-shadow: 0px 0px 8px #CCC;
   position: relative;
 }
 
@@ -355,7 +349,7 @@ ul {
 }
 
 .message .timestamp {
-  color: #406698;
+  color: #6060C0;
   font-style: italic;
   font-size: smaller;
   white-space: nowrap;
@@ -387,7 +381,6 @@ ul {
 }
 
 .message .content {
-  color: #afafac;
   display: inline;
   white-space: pre-wrap;
   cursor: text;
@@ -435,11 +428,11 @@ ul {
 .longword { word-break: break-all; }
 
 #nick-and-input {
-  border-top: 1px solid #505053;
+  border-top: 1px solid #F9F9F9;
   -webkit-box-flex: 0;
   display: -webkit-box;
-  background-color: #242323;
-  padding: 2px 10px 5px 10px;
+  background-color: #ECECEC;
+  padding: 5px 10px 5px 10px;
 }
 
 #nick {
@@ -472,16 +465,16 @@ ul {
 }
 
 #input {
-  background-color: #505053;
+  background-color: #F9F9F9;
   display: block;
   -webkit-box-flex: 1;
   width: 100%;
-  height: 25px;
+  height: 30px;
   border: 1px;
-  border-radius: 0px;
+  border-radius: 5px;
   -webkit-box-shadow: 0px 0px 3px #888;
-  color: #afafac;
-  font-size: 12px;
+  color: #505053;
+  font-size: 14px;
   padding: 0px 8px;
   outline: 0;
 }
@@ -515,59 +508,3 @@ ul {
   background-color: #999;
   border-radius: 8px;
 }
-
-/* this is stuff from topbar.css but I wanted to be able to theme it */
-#hide-channels {
-  display: inline-block;
-  font-size: 16px;
-}
-
-#topic-container {
-  border-bottom: 1px solid #CCC;
-  -webkit-box-flex: 0;
-  display: -webkit-box;
-  background-color: #242323;
-  padding: 4px 6px;
-}
-
-#status {
-  -webkit-box-flex: 1;
-  padding: 4px 5px;
-}
-
-#status .topic {
-  font-style: italic;
-}
-
-.topbar-button {
-  background: #505053;
-  border: 0 transparent;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 2px;
-  -webkit-transition: .1s linear -webkit-box-shadow;
-  margin-right: 4px;
-}
-
-.topbar-button-left:after {
-  content: "←"
-}
-
-.topbar-button-right:after {
-  content: "→"
-}
-
-
-.topbar-button:active {
-  box-shadow: 0 0 0 1px rgba(0 ,0 ,0 ,.15) inset, 0 0 6px rgba(0, 0, 0, .2) inset;
-}
-
-.topbar-button:hover {
-  background: #afafa3;
-}
-
-.topbar-button:focus {
-  outline: none;
-}
-
-

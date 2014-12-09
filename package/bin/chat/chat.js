@@ -71,6 +71,8 @@
       this.toggleChannelDisplay = $('#hide-channels');
       this.toggleChannelDisplay.click(function() {
         $('#rooms-and-nicks')[0].classList.toggle('hidden');
+        $("#hide-channels")[0].classList.toggle('topbar-button-left')
+        $("#hide-channels")[0].classList.toggle('topbar-button-right')
       });
       this.channelDisplay = new chat.ChannelList();
       this.channelDisplay.on('clicked', function(server, chan) {
